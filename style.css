@@ -1,0 +1,124 @@
+/* GLOBAL SETUP */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT TEXT ACESSIBILITY SETUP */
+:root {
+    font-size: 62.5%;
+}
+
+/* BODY SETUP */
+body {
+    background: #ECE9FD;
+    padding: 6.0rem 2.3rem 6.6rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    color: #090039;
+}
+
+/* MAIN SETUP */
+main {
+    max-width: 33.0rem;
+    margin: 0 auto;
+}
+
+/* PARAGRAPH TEXT SETUP */
+p {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+}
+
+/* PRESENTATION PARAGRAPH TEXT SETUP (1ST P ON MAIN) */
+main p:first-child {
+    color: #7158EF;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
+    margin-bottom: 1.7rem;
+}
+
+/* HEADER TEXT SETUP */
+h1 {
+    font-size: 4.0rem;
+    font-weight: 800;
+    line-height: 4.8rem;
+
+    margin-bottom: 1.5rem;
+}
+
+/*  PARAGRAPH AFTER H1 */
+h1 + p {
+    opacity: 64%;
+
+    margin-bottom: 3.2rem;
+}
+
+/* LINK SETUP */
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/* LINK SETUP ON HOVER */
+a:hover {
+    color: #7158EF;
+}
+
+/* LIST SETUP */
+ul {
+    list-style: none;
+
+    margin-top: 7.2rem;
+}
+
+/* SPAN ON LIST */
+ul span {
+    font-size: 7.2rem;
+    font-weight: 800;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+}
+
+/*  LIST ITEMS */
+li {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+
+    max-width: 25.7rem;
+    display: flex;
+    gap: 3.8rem;
+    align-items: flex-start;                /* FLEX-START JÁ É O PADRÃO DE ALIGN-ITEMS DO DISPLAY:FLEX */
+}
+
+/* LIST ITEM THAT HAS ANOTHER LIST ITEM ABOVE SETUP */
+li + li {
+    margin-top: 3.2rem
+}
+
+/* RESPOSIVITY TO DESKTOP */
+@media (min-width: 700px) {
+    body {
+        padding: 8rem;
+    }
+    
+    main {
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main > div {                /* > DIV = PRIMEIRA INSTÂNCIA DA DIV */
+        max-width: 484px;
+    }
+
+    li {
+        max-width: 450px;
+
+        gap: 5.3rem;
+        align-items: center;
+    }
+}
